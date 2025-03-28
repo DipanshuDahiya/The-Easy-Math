@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="Interestfinder.css">
+</head>
+<body>
+    <style>
+        body {
+    background-image: url('https://c1.wallpaperflare.com/preview/852/224/908/frog-money-euro-bag.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    </style>
+    <div class="container">
+        <h1>Interest Calculator</h1>
+        <label for="principal">Principal Amount (₹):</label>
+        <input type="number" id="principal" placeholder="Enter amount" required>
+
+        <label for="rate">Annual Interest Rate (%):</label>
+        <input type="number" id="rate" placeholder="Enter rate" required>
+
+        <label for="time">Time (years):</label>
+        <input type="number" id="time" placeholder="Enter time" required>
+
+        <label for="frequency">Compounded (for CI only):</label>
+        <select id="frequency">
+            <option value="1">Yearly</option>
+            <option value="2">Half-Yearly</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
+        </select>
+
+        <button onclick="calculateInterest()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="InterestFinder.js"></script>
+</body>
+</html>
