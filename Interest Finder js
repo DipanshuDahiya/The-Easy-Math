@@ -1,0 +1,25 @@
+function calculateInterest() {
+    let principal = document.getElementById("principal").value;
+    let rate = document.getElementById("rate").value;
+    let time = document.getElementById("time").value;
+    principal = parseFloat(principal);
+    rate = parseFloat(rate);
+    time = parseFloat(time);
+    if (isNaN(principal) || isNaN(rate) || isNaN(time) || principal <= 0 || rate <= 0 || time <= 0) {
+        document.getElementById("result").innerHTML = "Please enter valid numbers!";
+        return;
+    }
+
+    // Calculate Simple Interest: (Using {SI = (P × R × T) / 100})
+    let simpleInterest = (principal * rate * time) / 100;
+    let siTotalAmount = principal + simpleInterest;
+    let compoundInterest = principal * Math.pow((1 + rate / 100), time) - principal;
+    let ciTotalAmount = principal + compoundInterest;
+    document.getElementById("result").innerHTML = `
+        <p>Simple Interest: ₹${simpleInterest.toFixed(2)}</p>
+        <p>Total Amount (with SI): ₹${siTotalAmount.toFixed(2)}</p>
+        <hr>
+        <p>Compound Interest: ₹${compoundInterest.toFixed(2)}</p>
+        <p>Total Amount (with CI): ₹${ciTotalAmount.toFixed(2)}</p>
+    `;
+}
