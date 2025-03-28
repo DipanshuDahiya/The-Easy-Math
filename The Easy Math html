@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TheEasyMath</title>
+    <link rel="stylesheet" href="TheEasyMath.css">
+</head>
+<body class="TheEasyMath"> 
+    
+    <h1>TheEasyMath</h1>
+    <h4>One solution for all math fears :</h4>
+    <p class="button-container">
+        <ul>
+           <li><button onclick="window.location.href='calculator.html'" class="button" id="mycal">Calculator</button></li>
+           <li><button onclick="window.location.href='InterestFinder.html'" class="button" id="myint">Interest finder</button></li> 
+           <li><button onclick="window.location.href='page.html'" class="button" id="myper">Percentage</button></li>
+           <li><button onclick="window.location.href='page.html'" class="button" id="myArea">Area,Perimeter,Volume</button></li>
+        </ul>
+    </p>
+</body>
+<script src="TheEasyMath.js"></Script>
+</html>
