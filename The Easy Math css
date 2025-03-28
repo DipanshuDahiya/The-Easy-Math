@@ -1,0 +1,68 @@
+h1{
+    color: rgb(214, 75, 33);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: black;
+    background-image: url(easymath2.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:initial;
+    justify-content: center;
+    align-items: center;
+    /* height: 60px; */
+}
+h4{
+    color: wheat;
+    text-align: center;
+    text-decoration: dotted;
+    font-size:medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20 px;
+}
+.button{
+    margin: auto;
+    color: rgb(134, 227, 72);
+    text-align: left;
+    text-decoration:wavy;
+    font-size:large;
+    font-family:'Times New Roman', Times, serif;
+}
+/* #mycal{
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+#myint{
+    position: relative;
+    top: 500px;
+    left: 10px;
+}
+#myper{
+    position: relative;
+    top: 15px;
+    left: 600px;} */
+
+@media only screen and (max-width: 400px){
+    .TheEasyMath{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
+@media only screen and (max-width: 800px){
+    .TheEasyMath{
+        width: 90%;
+        height: 90%;
+    }
+    
+}
